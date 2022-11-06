@@ -37,35 +37,7 @@
                     e = Object(V.a)(t, 2),
                     a = e[0],
                     r = e[1];
-                return Object(k.jsxs)("nav", {
-                    className: "site-nav" + (a ? " expand-nav" : ""),
-                    id: "site-nav",
-                    children: [
-                        Object(k.jsx)("div", { className: "site-nav-middle" }),
-                        Object(k.jsx)("div", {
-                            className: "site-nav-middle",
-                            children: Object(k.jsx)("a", {
-                                className: "site-nav-logo",
-                                href: "https://totob12.github.io",
-                                children: Object(k.jsx)("img", { alt: "Chill Radio", src: "img/chill-logo.png" }),
-                            }),
-                        }),
-                        Object(k.jsx)("div", {
-                            className: "site-nav-right main-nav",
-                            children: Object(k.jsx)("div", {
-                                className: "main-nav-group",
-                                children: Object(k.jsx)("ul", {
-                                    className: "nav" + (a ? " show-main-nav-items" : ""),
-                                    id: "nav",
-                                    children: [
-                                    ].map(function (t, e) {
-                                        return Object(k.jsx)("li", { children: Object(k.jsx)("a", { href: t.href, rel: "noopener noreferrer", target: "_blank", children: t.text }) }, e);
-                                    }),
-                                }),
-                            }),
-                        }),
-                    ],
-                });
+                return Object(k.jsxs)
             }
             var E,
                 T,
@@ -191,7 +163,7 @@
                         children: [
                             Object(k.jsxs)("div", {
                                 className: "under-header-content",
-                                children: [Object(k.jsx)("h1", { className: "site-title", children: "Welcome to TotoB12 Chill Radio." }), Object(k.jsx)("h2", { className: "site-description", children: "24/7 music designed for studying/reading/relaxing." })],
+                                children: [Object(k.jsx)("h1", { className: "site-title", children: "Welcome to TotoB12 Chill Radio." })],
                             }),
                             C.isBrowser &&
                                 Object(k.jsxs)(k.Fragment, {

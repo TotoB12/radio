@@ -1,4 +1,3 @@
-/*! For license information please see 2.8905fa7b.chunk.js.LICENSE.txt */
 (this.webpackJsonpcoderadio = this.webpackJsonpcoderadio || []).push([
     [2],
     [

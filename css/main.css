@@ -4,11 +4,11 @@
     font-family: "Lato", Arial;
 }
 body {
-    background-color: #1b1b32;
-    background-position: 50%;
+    background-color: black;
+    background-position: 100%;
     background-size: cover;
     color: #fff;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Century Gothic", "Monospace";
     margin: 0;
     overflow: hidden;
     padding: 0;
@@ -35,27 +35,31 @@ p {
 }
 @media only screen and (min-width: 768px) {
     .animation {
-        background-image: url("/projects/chill-radio/img/vapor.gif");
-        background-position: left bottom;
+        background-image: url("/img/background2.gif");
+        background-position: center center;
         background-repeat: no-repeat;
-        display: block;
-        height: 100%;
-        margin-top: 88px;
+        background-size: cover;
+        overflow:hidden;
+        display: flex;
         position: relative;
-        width: 100%;
+        width: auto;
+        height: 100%;
+        padding: 0 0;
+        margin: 0 0;
     }
 }
 .site-title {
-    font-size: 30px;
+    font-size: 16px;
 }
 @media only screen and (min-width: 768px) {
     .site-title {
-        font-size: 18px;
+        font-size: 32px;
     }
 }
 .site-description {
-    font-size: 18px;
-    margin-top: 18px;
+    font-size: 16px;
+    margin: 0;
+    vertical-align: baseline;
 }
 @media only screen and (min-width: 768px) {
     .site-description {
@@ -64,7 +68,7 @@ p {
     }
 }
 .under-header-content {
-    background-color: #0a0a23;
+    background-color: #274472;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -162,7 +166,7 @@ p {
 .now-playing {
     -webkit-align-content: center;
     align-content: center;
-    background-color: #1b1b32;
+    background-color: black;;
     bottom: 70px;
     display: -webkit-flex;
     display: flex;
@@ -176,7 +180,7 @@ p {
 }
 @media only screen and (min-width: 768px) {
     .now-playing {
-        background-color: #0a0a23;
+        background-color: black;;
         bottom: auto;
         height: 100%;
         left: 70px;
@@ -226,7 +230,7 @@ p {
     opacity: 1;
 }
 .visualizer {
-    background-color: #002ead;
+    background-color: #274472;
     height: 100%;
     pointer-events: none;
     position: absolute;
@@ -423,6 +427,7 @@ footer {
 }
 .site-nav,
 .site-nav-middle {
+    background-color: #274472;
     display: -webkit-flex;
     display: flex;
     overflow-y: hidden;
