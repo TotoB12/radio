@@ -1,4 +1,3 @@
-// Made by 3kh0
 // https://github.com/totob12/
 
 (this.webpackJsonpcoderadio = this.webpackJsonpcoderadio || []).push([
@@ -42,7 +41,7 @@
                     className: "site-nav" + (a ? " expand-nav" : ""),
                     id: "site-nav",
                     children: [
-                        Object(k.jsx)("div", { className: "site-nav-left" }),
+                        Object(k.jsx)("div", { className: "site-nav-middle" }),
                         Object(k.jsx)("div", {
                             className: "site-nav-middle",
                             children: Object(k.jsx)("a", {
@@ -64,14 +63,6 @@
                                     }),
                                 }),
                             }),
-                        }),
-                        Object(k.jsx)("button", {
-                            className: "site-nav-right toggle-button-nav" + (a ? " reverse-toggle-color" : ""),
-                            id: "toggle-button-nav",
-                            onClick: function () {
-                                r(!a);
-                            },
-                            children: "Menu",
                         }),
                     ],
                 });
