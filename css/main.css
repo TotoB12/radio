@@ -35,7 +35,7 @@ p {
 }
 @media only screen and (min-width: 768px) {
     .animation {
-        background-image: url("/img/background2.gif");
+        background-image: url("/img/background3.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -79,7 +79,7 @@ p {
     padding: 0 20px;
     position: absolute;
     text-align: center;
-    top: 38px;
+    top: 0px;
     width: 100%;
 }
 @media only screen and (min-width: 768px) {
@@ -241,7 +241,7 @@ p {
 @media only screen and (min-width: 768px) {
     .visualizer {
         background-color: transparent;
-        top: 88px;
+        top: 50px; // 88px
     }
 }
 .visualizer canvas {
