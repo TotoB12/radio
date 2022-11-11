@@ -161,25 +161,12 @@
                 I = function (t) {
                     return Object(k.jsxs)("main", {
                         children: [
-                            Object(k.jsxs)("div", {
-                                className: "under-header-content",
-                                children: [Object(k.jsx)("h1", { className: "site-title", children: "Welcome to TotoB12 Chill Radio." })],
-                            }),
                             C.isBrowser &&
                                 Object(k.jsxs)(k.Fragment, {
                                     children: [
                                         Object(k.jsx)("div", { className: "animation" }),
                                         Object(k.jsx)(N, { player: t.player, playing: t.playing }),
-                                        Object(k.jsxs)("details", {
-                                            children: [
 
-                                                Object(k.jsxs)("dl", {
-                                                    children: [
-
-                                                    ],
-                                                }),
-                                            ],
-                                        }),
                                     ],
                                 }),
                         ],

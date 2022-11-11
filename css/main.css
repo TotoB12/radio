@@ -10,7 +10,7 @@ body {
     color: #fff;
     font-family: "Century Gothic", "Monospace";
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
     padding: 0;
 }
 #root,
@@ -50,6 +50,8 @@ p {
 }
 .site-title {
     font-size: 16px;
+    margin-top: 100px;
+    font-family: "Century Gothic", "Monospace";
 }
 @media only screen and (min-width: 768px) {
     .site-title {
@@ -68,17 +70,17 @@ p {
     }
 }
 .under-header-content {
-    background-color: #274472;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
-    height: 200px;
+    height: 400px;
     -webkit-justify-content: center;
     justify-content: center;
     padding: 0 20px;
     position: absolute;
     text-align: center;
+    margin-top: 0px;
     top: 0px;
     width: 100%;
 }
@@ -166,8 +168,7 @@ p {
 .now-playing {
     -webkit-align-content: center;
     align-content: center;
-    background-color: black;;
-    bottom: 70px;
+    background-color: black;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -175,9 +176,11 @@ p {
     height: 120px;
     left: 0;
     padding: 10px;
-    position: absolute;
-    width: 100vw;
-}
+    position: relative;
+    margin-bottom: 0;
+    width: 100vw; 
+  }
+
 @media only screen and (min-width: 768px) {
     .now-playing {
         background-color: black;;
@@ -241,7 +244,7 @@ p {
 @media only screen and (min-width: 768px) {
     .visualizer {
         background-color: transparent;
-        top: 50px; // 88px
+        top: 49px;
     }
 }
 .visualizer canvas {
@@ -427,7 +430,7 @@ footer {
 }
 .site-nav,
 .site-nav-middle {
-    background-color: #274472;
+    margin-top: 50px;
     display: -webkit-flex;
     display: flex;
     overflow-y: hidden;
@@ -514,6 +517,7 @@ footer {
     left: 15px;
     list-style: none;
     margin: 0 0 0 -12px;
+    margin-top: 50px;
     padding: 0;
     position: absolute;
     top: 38px;
@@ -587,4 +591,56 @@ footer {
     background-color: #fff;
     color: #0a0a23;
 }
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #41729F;
+  font-family: "Century Gothic", "Monospace";
+  }
+
+  li a {
+  display: block;
+  text-align: center;
+  color: #c9c7c7;
+  text-decoration: none;
+  }
+
+  li a:hover:not(.active, .img) {
+  background-color: #5885AF;
+  }
+  
+  .active {
+  background-color: #39648C;
+  color: #c9c7c7;
+  }
+  
+  .icon {
+  padding: 10px 8px;  
+  float: left;
+  }
+  
+  .iconshow {
+  float: right;
+  }
+  
+  .right {
+  float: right;
+  }
+  
+  .img {
+  float: right;
+  }
+  
+  .cc {
+    margin: 0;
+    padding: 5px 0;
+    padding-bottom: 0;
+    padding-left: 2px;
+    float: right;
+    color: #c9c7c7;
+    font-size: 14px
+  }
 /*# sourceMappingURL=main.75b93fcc.chunk.css.map */
