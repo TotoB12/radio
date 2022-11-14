@@ -10,7 +10,7 @@ body {
     color: #fff;
     font-family: "Century Gothic", "Monospace";
     margin: 0;
-    overflow: auto;
+    overflow: hidden;
     padding: 0;
 }
 #root,
