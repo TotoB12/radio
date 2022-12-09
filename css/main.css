@@ -8,7 +8,7 @@ body {
     background-position: 100%;
     background-size: cover;
     color: #fff;
-    font-family: "Century Gothic", "Monospace";
+    font-family: "Montserrat";
     margin: 0;
     overflow: hidden;
     padding: 0;
@@ -237,14 +237,14 @@ p {
     height: 100%;
     pointer-events: none;
     position: absolute;
-    top: 238px;
+    top: 235px;
     width: 100%;
-    z-index: 5;
+    z-index: 0;
 }
 @media only screen and (min-width: 768px) {
     .visualizer {
         background-color: transparent;
-        top: 49px;
+        top: 45px;
     }
 }
 .visualizer canvas {
@@ -598,7 +598,9 @@ footer {
   padding: 0;
   overflow: hidden;
   background-color: #41729F;
-  font-family: "Century Gothic", "Monospace";
+  font-family: "Montserrat";
+    position: relative;
+    z-index: 2;
   }
 
   li a {
@@ -641,6 +643,7 @@ footer {
     padding-left: 2px;
     float: right;
     color: #c9c7c7;
-    font-size: 14px
+    font-size: 14px;
+    font-family: "Montserrat";
   }
 /*# sourceMappingURL=main.75b93fcc.chunk.css.map */
