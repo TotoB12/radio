@@ -21,31 +21,88 @@
    <meta name="revisit-after" content="1 days">
    <meta name="author" content="totob12">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="https://use.typekit.net/wvu5fqb.css">
   
   <title>24/7 Chill Music | TotoB12</title>
-  <ul>
-  <li><img class="img" src="https://totob12.github.io/things/logo.jpg" alt="Logo" height="44"></li>
-  <li><a class="icon" href="https://totob12.github.io/index.html"><span class="material-symbols-outlined">
-home</span></a></li>
-  <li><a class="icon" href="https://TotoB12-Chat.totob12.repl.co/"><span class="material-symbols-outlined">
-  forum</span><p class=cc>Social</p></a></li>
-<li><a class="icon" href="https://totob12.github.io/things/inpainting-forward.html"><span class="material-symbols-outlined">
-format_paint</span><p class="cc">Paint</p></a></li>
-  <li><a class="icon active" href="https://chill-radio.totob12.repl.co/"><span class="material-symbols-outlined">
-radio</span><p class="cc">Radio</p></a></li>
-<li><a class="icon" href="https://totob12.github.io/things/games.html"><span class="material-symbols-outlined">
-sports_esports</span><p class="cc">Games</p></a></li>
-<li><a class="icon" href="https://totob12.github.io/things/sites.html"><span class="material-symbols-outlined">
-handyman</span><p class="cc">Random</p></a></li>
-  <li><a class="icon right" href="https://totob12.github.io/things/feedback.html"><span class="material-symbols-outlined">
-alternate_email</span></a></li>
-<li><a class="icon right" href="https://totob12.github.io/things/countdown.html"><span class="material-symbols-outlined">
-hourglass_empty</span></a></li>
-  </ul>
+
+   
+ <!-- ---- ---- NAV ---- ---- -->
+  
+<nav id="side">
+<button id="side-close" onclick="side()"><span class='material-symbols-outlined'>close</span></button>
+<section>
+    <a href="https://totob12.github.io/index.html"><span class="material-symbols-outlined">home</span><div class="dropdowncc">Home</div></a>
+    <a class="blanka" href=""></a>
+    <a href="https://TotoB12-Chat.totob12.repl.co/"><span class="material-symbols-outlined">forum</span><div class="dropdowncc">Social</div></a>
+    <a href="https://totob12.github.io/things/inpainting-forward.html"><span class="material-symbols-outlined">format_paint</span><div class="dropdowncc">Paint</div></a>
+    <a href="https://chill-radio.totob12.repl.co/"><span class="material-symbols-outlined">radio</span><div class="dropdowncc">Radio</div></a>
+    <a href="https://totob12.github.io/things/games.html"><span class="material-symbols-outlined">sports_esports</span><div class="dropdowncc">Games</div></a>
+    <a href="https://totob12.github.io/things/sites.html"><span class="material-symbols-outlined">handyman</span><div class="dropdowncc">Random</div></a>
+    <a href="https://totob12.github.iow/countdown"><span class="material-symbols-outlined">hourglass_empty</span><div class="dropdowncc">Countdown</div></a>
+</section>
+</nav>
+  
+<nav>
+  <button id="side-btn" onclick="side(1)"/><span class='material-symbols-outlined'>menu</span></button>
+  <div class="nav-main-section">
+    <a class="home active" href="https://totob12.github.io/index.html"><span class="material-symbols-outlined">home</span></a>
+    <a href="https://TotoB12-Chat.totob12.repl.co/"><span class="material-symbols-outlined">forum</span>Social</a>
+    <a href="https://totob12.github.io/things/inpainting-forward.html"><span class="material-symbols-outlined">format_paint</span>Paint</a>
+    <a href="https://totob12.github.io/things/radio.html"><span class="material-symbols-outlined">radio</span>Radio</a>
+    <a href="https://totob12.github.io/things/games.html"><span class="material-symbols-outlined">sports_esports</span>Games</a>
+    <a href="https://totob12.github.io/things/sites.html"><span class="material-symbols-outlined">handyman</span>Random</a>
+    <a href="https://totob12.github.io/countdown"><span class="material-symbols-outlined">hourglass_empty</span>Countdown</a>
+  </div>
+  <div class="nav-section ns3">
+  <button id="setting-btn" onclick="setting(1)"/><span class='material-symbols-outlined'>settings</span></button>
+  <img class="img" src="https://totob12.github.io/things/logo.jpg" alt="Logo" height="48px">
+  </div>
+</nav>
+
+<nav id="setting">
+<button id="setting-close" onclick="setting()"><span class='material-symbols-outlined'>close</span></button>
+  <section>
+    <h1>Settings</h1>
+    <a href="https://totob12.github.io/things/feedback.html"><span class="material-symbols-outlined">alternate_email</span>Contact and help</a>
+  </section>
+</nav>
  </head>
  <script src="/js/main.js"></script>
  <body>
   <div id="root"></div>
+  <script>
+    //sidebar
+function side (open) {
+  if (open) {
+    document.getElementById("side").classList.add("show");
+    document.getElementById("setting").classList.remove("show");
+  } else {
+    document.getElementById("side").classList.remove("show");
+  }
+}
+
+//setting
+function setting (open) {
+  if (open) {
+    document.getElementById("setting").classList.add("show");
+    document.getElementById("side").classList.remove("show");
+  } else {
+    document.getElementById("setting").classList.remove("show");
+  }
+}
+
+//sidebar and setting close on click
+var main = document.getElementById("main");
+
+main.addEventListener("click", function(){
+    if(document.getElementById("setting").className == "show") {
+        document.getElementById("setting").classList.remove("show");
+    }
+    if(document.getElementById("side").className == "show") {
+        document.getElementById("side").classList.remove("show");
+    }
+});
+  </script>
   <script>
     !function(e){function r(r){for(var n,i,l=r[0],a=r[1],f=r[2],p=0,s=[];p<l.length;p++)i=l[p],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&s.push(o[i][0]),o[i]=0;for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(e[n]=a[n]);for(c&&c(r);s.length;)s.shift()();return u.push.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var a=t[l];0!==o[a]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={1:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/";var l=this.webpackJsonpcoderadio=this.webpackJsonpcoderadio||[],a=l.push.bind(l);l.push=r,l=l.slice();for(var f=0;f<l.length;f++)r(l[f]);var c=a;t()}([])</script>
    <script src="js/2.js"></script>
